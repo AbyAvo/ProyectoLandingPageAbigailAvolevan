@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#imgPrincipal{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+body{
+    height: 500vh;
+}
+
+
+
+/*.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    padding: 100px;
+}
+
+.buscador{
+    justify-self: end;
+}*/
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #0008;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    #Logo{
+        margin-left: 50px;
+    }
+
+    #Logo-mobile{
+        display: none;
+    }
+
+    .Links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+
+        .idiomas{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+
+            img{
+                margin-right:50px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .grey{
+            color: gray;
+        }
+
+        .registro{
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+
+            a{
+                justify-self: center;
+            }
+        }
+
+        #bar{
+            height: 100%;
+            width: 1px;
+            background-color: white;
+        }
+    }
+}
+
+/*#Topbar{
+    background-color: rgba(10, 19, 1, 0.78);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}*/
+
+@font-face {
+    font-family: 'PFR';
+    src: url('/Fuentes/PFR/PFRegalDisplayPro-Black.ttf');
+}
+
+.fuente{
+    font-family: 'PFR';
+}
+
+#titulos{
+    position: absolute;
+    top: 200px;
+    margin-left: 5vw;
+    color: white;
+
+   
+
+    h2{
+        width: 490px;
+        height: 47px;
+        top: 644px;
+        left: 122px;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+
+    h3{
+        width: 746px;
+        height: 99px;
+        top: 683px;
+        left: 106px;
+        font-size: 80px;
+        line-height: 45px;
+    }
+
+   /* #rectangulo{
+        
+        top: 911px;
+        left: 122px;
+        border-radius: 100px;
+        border: 1px;
+        rotate: 90°;
+        
+    }
+
+    p{
+        color: blue;
+        width: 300px;
+        height: 32px;
+        top: 55px;
+        left: 212px;
+        font-size: 30px;
+        font-weight: 390;
+        line-height: 45px;
+       
+    }*/
+    
+    button{
+        background-color: transparent;
+        border-color: white;
+        border-radius: 100px;
+        padding: 10px;
+        color: white;
+        border: 1px solid;
+        font: arial;
+        width: 200px;
+
+    }
+    
+}
+
+@media(max-width: 900px){
+
+   /* html{
+        background-color: red;
+    }*/
+
+  nav{
+
+        #Logo{
+            display: none;
+        }
+
+        #Logo-mobile{
+            display: inline;
+            margin-left: 30px;
+            border: solid 1px white;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        .Links{
+            grid-template-columns: 1fr;
+
+            .idiomas{
+
+                grid-template-columns: 1fr;
+                justify-self: end;
+                a{
+                    display: none;
+                }
+            }
+            .registro{
+                display: none;
+            }
+        }
+  }
+
+}
