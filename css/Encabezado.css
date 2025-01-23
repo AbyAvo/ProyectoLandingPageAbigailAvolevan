@@ -112,7 +112,7 @@ nav{
    
 
     h2{
-        width: 490px;
+        width: auto;
         height: 47px;
         top: 644px;
         left: 122px;
@@ -122,7 +122,7 @@ nav{
     }
 
     h3{
-        width: 746px;
+        width: auto;
         height: 99px;
         top: 683px;
         left: 106px;
